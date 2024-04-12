@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Connect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,37 +30,60 @@
             margin-bottom: 20px;
         }
 
-        .buttons {
+        .social-buttons {
             display: flex;
             justify-content: center;
             gap: 10px;
         }
 
-        .btn {
-            padding: 10px 20px;
+        .social-btn {
+            padding: 15px;
             border: none;
-            border-radius: 5px;
-            font-size: 16px;
+            border-radius: 50%; /* Circular buttons */
+            font-size: 18px;
             cursor: pointer;
+            display: flex; /* Center icons vertically */
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
         }
 
-        .btn-primary {
-            background-color: #3897f0;
-            color: #fff;
+        .social-btn:hover {
+            background-color: rgba(0, 0, 0, 0.1); /* Slight darkening on hover */
         }
 
-        .btn-secondary {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            color: #333;
+        .fab { /* Font Awesome classes for icons */
+            font-size: 20px;
+        }
+
+        .fab-steam {
+            color: #c6c7cc;
+        }
+
+        .fab-discord {
+            color: #7289da;
+        }
+
+        .fab-github {
+            color: #4183c6;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Benyamin</h1>
-        <p>follow me on social medias</p>
-        <a herf="https://www.instagram.com/vatashiwabendesu">Instagram<a>
+        <p>follow me on social media</p>
+        <div class="social-buttons">
+            <button class="social-btn">
+                <a href="https://steamcommunity.com/id/kaminori_no_kokyu/"><i class="fab fab-steam"></i></a>
+            </button>
+            <button class="social-btn">
+                <a href="discordapp.com/users/945652974741508167"><i class="fab fab-discord"></i></a>
+            </button>
+            <button class="social-btn">
+                <a href="https://github.com/"><i class="fab fab-github"></i></a>
+            </button>
+        </div>
     </div>
 </body>
 </html>

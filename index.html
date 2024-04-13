@@ -37,23 +37,27 @@
     }
 
     .social-btn {
-      padding: 15px;
+      padding: 15px 20px; /* Adjusted padding for the glassmorphism effect */
       border: none;
-      border-radius: 50%; /* Circular buttons */
+      border-radius: 10px; /* Rounded corners for the buttons */
       font-size: 18px;
       cursor: pointer;
-      display: flex; /* Center icons vertically */
+      display: flex;
       align-items: center;
       justify-content: center;
       transition: background-color 0.3s ease;
-      text-decoration: none; /* Remove underline on buttons */
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+      backdrop-filter: blur(10px); /* Blurry background to create glass effect */
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37); /* Soft box shadow for the glass effect */
+      color: #333; /* Text color */
     }
 
     .social-btn:hover {
-      background-color: rgba(0, 0, 0, 0.1); /* Slight darkening on hover */
+      background-color: rgba(255, 255, 255, 0.4); /* Slight change in background color on hover */
     }
 
-    .fab { /* Font Awesome classes for icons */
+    .fab {
       font-size: 20px;
     }
 
@@ -66,15 +70,15 @@
     }
 
     .fab-steam {
-      color: #00a9e0;  /* Light blue for Steam */
+      color: #00a9e0;  
     }
 
     .fab-discord {
-      color: #7289da;  /* Purple for Discord */
+      color: #7289da;  
     }
 
     .fab-github {
-      color: #171517;  /* Black for GitHub */
+      color: #171517;  
     }
   </style>
 </head>

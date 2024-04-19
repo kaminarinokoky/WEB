@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Social Connect</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -25,6 +25,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      max-width: 80%;
+      margin: auto;
     }
 
     h1 {
@@ -35,14 +37,16 @@
 
     .social-buttons {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
+      margin-top: 20px;
     }
 
     .social-btn {
-      padding: 15px 20px; /* Adjusted padding for the glassmorphism effect */
+      padding: 15px 20px;
       border: none;
-      border-radius: 10px; /* Rounded corners for the buttons */
+      border-radius: 10px;
       font-size: 18px;
       cursor: pointer;
       display: flex;
@@ -50,62 +54,44 @@
       justify-content: center;
       transition: background-color 0.3s ease;
       text-decoration: none;
-      background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
-      backdrop-filter: blur(10px); /* Blurry background to create glass effect */
-      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37); /* Soft box shadow for the glass effect */
-      color: #333; /* Text color */
-    }
-
-    .social-btn:hover {
-      background-color: rgba(255, 255, 255, 0.4); /* Slight change in background color on hover */
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+      color: #333;
     }
 
     .fab {
       font-size: 20px;
     }
 
-    .fab-twitter {
-      color: #00aced;
-    }
-
-    .fab-instagram {
-      color: #e1306c;
-    }
-
-    .fab-steam {
-      color: #00a9e0;  
-    }
-
-    .fab-discord {
-      color: #7289da;  
-    }
-
-    .fab-github {
-      color: #171517;  
-    }
-
     .profile-pic {
-      width: 100px; /* Adjust the width as needed */
-      height: 100px; /* Adjust the height as needed */
-      border-radius: 50%; /* Make the image circular */
-      margin-bottom: 20px; /* Add space between the image and heading */
-      align-self: center; /* Centering the profile picture */
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      align-self: center;
+    }
+
+    @media (max-width: 600px) {
+      .social-btn {
+        padding: 10px 15px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="profile-pic.jpg" alt="Benyamin's Profile Picture" class="profile-pic">
+  <div class="container">
+    <img src="profile-pic.jpg" alt="Benyamin's Profile Picture" class="profile-pic">
 
-    <h1>Benyamin</h1>
-    <p>Follow me on social media</p>
-    <div class="social-buttons">
-      <a href="https://twitter.com/" target="_blank" class="social-btn"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com/vatashiwabendesu" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
-      <a href="https://steamcommunity.com/id/kaminori_no_kokyu/" target="_blank" class="social-btn"><i class="fab fa-steam"></i></a>
-      <a href="https://discord.com/users/945652974741508167" target="_blank" class="social-btn"><i class="fab fa-discord"></i></a>
-      <a href="https://github.com/kaminarinokoky" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
-    </div>
-  </div>
+    <h1>Benyamin</h1>
+    <p>Follow me on social media</p>
+    <div class="social-buttons">
+      <a href="https://twitter.com/" target="_blank" class="social-btn"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/vatashiwabendesu" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
+      <a href="https://steamcommunity.com/id/kaminori_no_kokyu/" target="_blank" class="social-btn"><i class="fab fa-steam"></i></a>
+      <a href="https://discord.com/users/945652974741508167" target="_blank" class="social-btn"><i class="fab fa-discord"></i></a>
+      <a href="https://github.com/kaminarinokoky" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
 </body>
 </html>

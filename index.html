@@ -6,6 +6,7 @@
   <title>Social Connect</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
+    /* General Body Styling */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -13,28 +14,38 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      background-color: #f0f0f0;
+      background-color: #030101;
+      background-image: url("https://transparenttextures.com/patterns/xv.png");
+      background-size: 200px 200px; /* Adjust size as needed */
+      background-repeat: repeat;
+      color: white; /* White text color to contrast with background */
+      padding: 10px;
     }
 
+    /* Glass Effect Container */
     .container {
-      background-color: rgba(255, 255, 255, 0.8);
-      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.15); /* More transparent background */
+      backdrop-filter: blur(15px); /* Glass blur effect */
+      border-radius: 15px;
       padding: 30px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Darker shadow for depth */
+      border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 80%;
+      max-width: 600px;
+      width: 100%; /* Full width on small screens */
       margin: auto;
     }
 
+    /* Responsive Headings */
     h1 {
       text-align: center;
       font-size: 2em;
       margin-bottom: 20px;
     }
 
+    /* Social Buttons */
     .social-buttons {
       display: flex;
       flex-wrap: wrap;
@@ -60,21 +71,37 @@
       color: #333;
     }
 
+    .social-btn:hover {
+      transform: scale(1.1); /* Slight zoom effect */
+    }
+
     .fab {
       font-size: 20px;
     }
 
+    /* Profile Picture Styling */
     .profile-pic {
       width: 100px;
       height: 100px;
       border-radius: 50%;
       margin-bottom: 20px;
-      align-self: center;
+      border: 3px solid rgba(255, 255, 255, 0.6);
     }
 
+    /* Responsive Adjustments */
     @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+      }
+
       .social-btn {
-        padding: 10px 15px;
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      .profile-pic {
+        width: 80px;
+        height: 80px;
       }
     }
   </style>
@@ -82,9 +109,8 @@
 <body>
   <div class="container">
     <img src="profile-pic.jpg" alt="Benyamin's Profile Picture" class="profile-pic">
-
     <h1>Benyamin</h1>
-    <p>Follow me on social media</p>
+    <p>AKA Benji, Benlwyn</p>
     <div class="social-buttons">
       <a href="https://twitter.com/ich_bin_beny" target="_blank" class="social-btn"><i class="fab fa-twitter"></i></a>
       <a href="https://www.instagram.com/vatashiwabendesu" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
